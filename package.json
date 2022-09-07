@@ -1,0 +1,24 @@
+{
+  "name": "1px-art",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ta4i/1px-art.git"
+  },
+  "author": "Maksym Kramarenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ta4i/1px-art/issues"
+  },
+  "homepage": "https://github.com/Ta4i/1px-art#readme",
+  "dependencies": {
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

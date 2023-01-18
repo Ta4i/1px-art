@@ -2,7 +2,7 @@ const Jimp = require("jimp");
 const pngitxt = require('png-itxt');
 const fs = require('fs');
 
-modeule.exports = async function create1pxImage(path, color, metadata) {
+module.exports = async function create1pxImage(path, color, metadata) {
     const image = await generate1pxJimpImage(color);
     const tempPath = `temp_${path}`;
 

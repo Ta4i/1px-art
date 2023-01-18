@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "dependencies": {
     "jimp": "^0.16.2",
     "png-itxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }

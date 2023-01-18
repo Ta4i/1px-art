@@ -18,11 +18,11 @@ async function generate1pxJimpImage(color) {
             color,
             (err, image) => {
                 if (err) {
-                    reject(err)
+                    reject(err);
                 }
-                resolve(image)
+                resolve(image);
             }
-        )
+        );
     });
 }
 
@@ -34,15 +34,12 @@ function writeMetadata(from, to, metadata) {
                 keyword,
                 value: metadata[keyword]
             };
-            console.log('prop', prop);
             imageReadStream = imageReadStream.pipe(
                 pngitxt.set(prop)
-            )
+            );
         }
         const imageWriteStream = fs.createWriteStream(to);
         imageWriteStream.addListener('finish', () => resolve());
         imageReadStream.pipe(imageWriteStream);
     });
 } 
-
-create1pxImage('test2.png', 0x0000FFff, {lol: 'kek', chebu: 'rek\nbut what is here^@^@hahaha'});

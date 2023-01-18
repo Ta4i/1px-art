@@ -17,5 +17,7 @@
   },
   "homepage": "https://github.com/Ta4i/1px-art#readme",
   "dependencies": {
+    "jimp": "^0.16.2",
+    "png-itxt": "^2.0.0"
   }
 }
